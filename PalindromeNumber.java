@@ -7,7 +7,6 @@ public class PalindromeNumber {
         if (n == 0)
             return 0;
         int sum = 0;
-        int i = 0;
         sum = sum + n % 10;
         poli(n /10);
         return (sum * 10 ) + n % 10;

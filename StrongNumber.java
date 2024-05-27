@@ -5,7 +5,7 @@ public class StrongNumber {
     static int fact(int n){
         if (n == 0)
             return 1;
-        return n * fact(n - 10);
+        return n * fact(n - 1);
     }
     static int strong(int n){
         if (n == 0)
@@ -15,6 +15,9 @@ public class StrongNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.println(strong(145));
+        if (n == strong(n))
+            System.out.println("Strong Number");
+        else
+            System.out.println("Not a Strong number");
     }
 }
